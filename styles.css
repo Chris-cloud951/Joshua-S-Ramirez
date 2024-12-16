@@ -1,0 +1,272 @@
+body {
+    background-color: #343a40; /* Dark background */
+    color: #000000; /* Light text */
+    margin: 0; /* Remove default margin */
+}
+.welcome-section {
+    background-color: #495057; /* Darker section background */
+    padding: 50px 0;
+    text-align: center;
+    min-height: 100vh; /* Ensure the section is tall enough to see the effect */
+}
+
+.about-image {
+    border-radius: 10px; /* Optional: Add some styling to the image */
+}
+
+.btn-close-white {
+    filter: invert(1); /* Make the close button white */
+}
+
+.nav-link {
+    color: #7b7878; /* White text for nav links */
+}
+
+.nav-link:hover {
+    color: #0d0d0d; /* Light gray on hover */
+}
+
+.welcome-section {
+    background-image: url('Image/Cyber\ Crime.png'); /* Path to your background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center 100%; /* Center the image and shift it down */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* White text color */
+    padding: 0; /* Remove padding to use flexbox for centering */
+    min-height: 500px; /* Set a minimum height for better visibility */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center the text */
+    position: relative; /* Position relative for overlay */
+}
+
+.welcome-section::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute; /* Position absolute to cover the section */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place the overlay below the text */
+}
+
+.welcome-section h1, .welcome-section p {
+    position: relative; /* Position relative to place above the overlay */
+    z-index: 2; /* Place the text above the overlay */
+    margin: 0; /* Remove default margin */
+}
+#About h1 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #ffffff; /* Darker text color */
+}
+/* About Section Image */
+.about-image {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 600px; /* Optional: Set a maximum width */
+    border-radius: 20px; /* Optional: Add some border radius for styling */
+}
+#About p {
+    font-size: 1.5rem; /* Slightly larger font size for the paragraph */
+    line-height: 1.6; /* Increased line height for readability */
+    color: #ffffff; /* Darker text color for the paragraph */
+}
+#About img {
+    border-radius: 15%; /* Keep the border radius for a less circular shape */
+    width: 500px; /* Increase the width */
+    height: 500px; /* Increase the height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Keep the shadow for depth */
+}
+#Document {
+    background-color: #7e7e7e; /* Light background for contrast */
+    padding: 40px 0; /* Add padding for spacing */
+}
+
+/* Style for the document images */
+#Document img {
+    width: 100%; /* Make images responsive */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+#Document img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Optional: Style for the document section heading */
+#Document h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    font-size: 2.5rem; /* Increase font size */
+    color: #ffffff; /* Darker text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #Document h1 {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+}
+footer {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Change text color to white for better contrast */
+}
+/* Contact Form Styles */
+#Contact {
+    background-color: #ffffff; /* Set background to white for a clean look */
+    padding: 40px 0; /* Add padding to the top and bottom */
+}
+
+#Contact h1 {
+    margin-bottom: 30px; /* Space below the heading */
+    font-size: 2.5rem; /* Increase font size for the heading */
+    color: #333; /* Darker color for better contrast */
+}
+
+.form-label {
+    font-weight: bold; /* Make labels bold */
+    color: #333; /* Darker color for labels */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Light border for input fields */
+    border-radius: 0.25rem; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Add shadow on focus */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color for the button */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3; /* Darker border on hover */
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem; /* Space between form elements */
+}
+.video-section {
+    background-color: #4b4b4c; /* Light background color */
+    padding: 40px 0; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.video-section h1 {
+    margin-bottom: 30px; /* Space below the heading */
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #ffffff; /* Darker text color */
+}
+
+.video-section iframe {
+    border-radius: 8px; /* Rounded corners for the iframe */
+}
+
+/* styles.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background for navbar */
+}
+
+.nav-link {
+    color: #000; /* Black text for links */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Biography container styles */
+.biography-container {
+    position: relative;
+    padding: 100px 20px; /* Add padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure overlay is above background */
+}
+
+.content {
+    position: relative; /* Position relative for content */
+    z-index: 2; /* Ensure content is above overlay */
+}
+
+/* Biography content styles */
+.biography-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Space below image */
+}
+
+.text-container {
+    max-width: 600px; /* Limit text width */
+    color: #fff; /* White text for contrast */
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: white; /* White links in footer */
+}
+
+footer a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .biography-content {
+        flex-direction: column; /* Stack items on smaller screens */
+    }
+}
+.new-document-title {
+    color: #ffffff; /* Change this to your desired color */
+    text-align: left; /* Align the title to the left */
+    margin-bottom: 20px; /* Add some space below the title */
+}
+.new-document-image {
+    width: 100%; /* Make the image take the full width of the column */
+    height: 250px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
